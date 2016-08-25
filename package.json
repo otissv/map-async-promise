@@ -1,6 +1,6 @@
 {
   "name": "map-async-promise",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "main": "lib/index.js",
   "repository": "git@github.com:otissv/map-async-promise.git",
   "keywords": [
