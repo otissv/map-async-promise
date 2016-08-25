@@ -8,7 +8,7 @@
     "async",
     "loop",
     "map",
-    "promise",
+    "promise"
   ],
   "author": "Otis Virginie",
   "license": "MIT",
