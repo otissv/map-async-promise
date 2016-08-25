@@ -2,19 +2,20 @@
   "name": "map-async-promise",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "scripts": {
-    "build": "rollup --config rollup.config.js",
-    "test": "node test-runner.js"
-  },
-  "author": "Otis Virginie",
+  "repository": "git@github.com:otissv/map-async-promise.git",
   "keywords": [
-    "array"
+    "array",
     "async",
     "loop",
     "map",
     "promise",
   ],
+  "author": "Otis Virginie",
   "license": "MIT",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "test": "node test-runner.js"
+  },
   "description": "Allows mapping of an async function over an array and returns a promise once all items in the array have resolved.",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.2.0",
