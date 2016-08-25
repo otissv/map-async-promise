@@ -2,7 +2,7 @@
 
 export default function mapPromise (fn) {
   return function (arr) {
-    let contents = arr.map((item, index) => {
+    let contents = arr.map((element, index) => {
       return new Promise((resolve) => {
         fn(resolve, element, index, arr);
       });
