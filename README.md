@@ -7,9 +7,9 @@ With no dependencies.
 
 ## Usage
 ```
-const readFiles = (resolve, element, index, arr) => {
+const readFiles = (resolve, reject, element, index, arr) => {
   fs.readFile(element, 'utf8', function (err, data) {
-    if (err) return console.log(err);
+    if (err) return reject(err);
     resolve(data);
   });
 };
@@ -19,7 +19,7 @@ forEachPromise(readFiles)(['some/path/to/file', 'another/path/to/file'])
   .then(results => {
     console.log(results);
   })
-  .catch(err => echo(err));
+  .catch(err => console.log(err));
 ```
 
 
